@@ -20,7 +20,7 @@ def update_workbook(file_name):
     iterated_rows = int(input("How many rows would you like to iterate for: "))
     user_operation = input("What operation are we performing? Please type multiplying, dividing, adding, or subtracting: ").lower()
 
-    while (user_operation != "multiplying" and user_operation != "dividing" and user_operation != "adding" and user_operation != "subtracting"):
+    while (user_operation not in ["multiplying", "dividing", "adding", "subtracting"]):
         user_operation = input("Invalid operation! Please try again: ")
 
 
