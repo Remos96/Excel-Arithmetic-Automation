@@ -25,7 +25,6 @@ def update_workbook(file_name):
     while (user_operation not in ["multiplying", "dividing", "adding", "subtracting"]):
         user_operation = input("Invalid operation! Please try again: ")
 
-
     operation_value = float(input("Enter numerical value for the operation: "))
     col_selected = int(input(f"Which column number values should the program be {user_operation} {operation_value} by (this column should contain your initial/original values): "))
     new_value_col = int(input("Which column number should the program store the newly calculated values: "))
